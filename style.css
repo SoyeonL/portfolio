@@ -1,0 +1,28 @@
+/* Global */
+:root {
+    /* Color */
+    --color-white: #ffffff;
+    --color-dark-white: #F5EBEB;
+    --color-light-brown: #E4D0D0;
+    --color-pink-brown: #D5B4B4;
+    --color-brown: #867070;
+    --color-black: #000000;
+
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micro: 14px;
+    
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600;
+    --weight-regular: 400;
+
+    /* Size */
+}
+/* Universal tags */
+* {
+    box-sizing: border-box;
+}
