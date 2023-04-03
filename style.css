@@ -1,28 +1,57 @@
 /* Global */
 :root {
-    /* Color */
-    --color-white: #ffffff;
-    --color-dark-white: #F5EBEB;
-    --color-light-brown: #E4D0D0;
-    --color-pink-brown: #D5B4B4;
-    --color-brown: #867070;
-    --color-black: #000000;
+  /* Color */
+  --color-white: #ffffff;
+  --color-dark-white: #f5ebeb;
+  --color-light-brown: #e4d0d0;
+  --color-pink-brown: #d5b4b4;
+  --color-brown: #867070;
+  --color-black: #000000;
 
-    /* Font size */
-    --font-large: 48px;
-    --font-medium: 28px;
-    --font-regular: 18px;
-    --font-small: 16px;
-    --font-micro: 14px;
-    
-    /* Font weight */
-    --weight-bold: 700;
-    --weight-semi-bold: 600;
-    --weight-regular: 400;
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
 
-    /* Size */
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
 }
 /* Universal tags */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Typography */
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0;
+}
+
+h2 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: 4px 0;
 }
