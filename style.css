@@ -373,7 +373,7 @@ p {
 }
 
 .contact__links i {
-  font-size: var(--font-medium);
+  font-size: var(--font-large);
   margin-top: 20px;
   padding: 0 8px;
   transition: all var(--animation-duration) ease-in;
