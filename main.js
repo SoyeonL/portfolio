@@ -20,8 +20,14 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
-
+  navbarMenu.classList.remove("open");
   scrollIntoView(link);
+});
+
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector(".nav__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
 });
 
 // Handle click on "contact me" button on home
@@ -66,6 +72,14 @@ workBtnContainer.addEventListener("click", (event) => {
   if (filter == null) {
     return;
   }
+
+  const selected = document.querySelector(".category__btn.selected");
+  selected.classList.remove("selected");
+
+  const target =
+    event.target.nodeName === "BUTTON" ? event.target : event.target.parentNode;
+
+  target.classList.add("selected");
 
   projectContainer.classList.add("anim-out");
 
