@@ -53,6 +53,7 @@ button {
   border: none;
   cursor: pointer;
   outline: none;
+  padding: 0;
 }
 
 /* Typography */
@@ -153,6 +154,10 @@ p {
   border-radius: var(--size-border-radius);
   margin: 24px;
   padding: 8px 12px;
+}
+
+.home__contact:hover {
+  background-color: var(--color-light-brown);
 }
 
 /* Section common */
@@ -287,6 +292,7 @@ p {
   border-radius: var(--size-border-radius);
   font-size: var(--font-small);
   padding: 8px 48px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -310,9 +316,9 @@ p {
   height: 24px;
   display: inline-block;
   line-height: 24px;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -432,6 +438,14 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -453,19 +467,49 @@ p {
     display: block;
   }
 
+  .section {
+    padding: 16px;
+    padding-top: 40px;
+  }
+
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
   }
 
   .skillset {
     flex-direction: column;
   }
 
+  .category__btn {
+    margin: 4px 0;
+    width: 60%;
+  }
+
+  .category__btn.selected .category__count,
+  .category__btn:hover .category__count {
+    top: 4px;
+  }
+
   .project {
     flex-grow: 1;
+  }
+
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  .nav__toggle-btn {
+    right: 16px;
+    font-size: var(--font-medium);
   }
 }
