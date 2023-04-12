@@ -121,6 +121,10 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+}
+
 .nav__toggle-btn {
   position: absolute;
   top: 16px;
@@ -168,7 +172,7 @@ p {
 }
 
 .section__container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
 
